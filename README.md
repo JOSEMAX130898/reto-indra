@@ -1,61 +1,32 @@
-<!--
-title: 'Serverless Framework Node Express API on AWS'
-description: 'This template demonstrates how to develop and deploy a simple Node Express API running on AWS Lambda using the traditional Serverless Framework.'
-layout: Doc
-framework: v3
-platform: AWS
-language: nodeJS
-priority: 1
-authorLink: 'https://github.com/serverless'
-authorName: 'Serverless, inc.'
-authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
--->
+# RETO TÉCNICO BACKEND NODEJS - Serverless Framework Node Express API on AWS 
 
-# Serverless Framework Node Express API on AWS
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)  
+![Serverless](https://img.shields.io/badge/Serverless-FF9900?style=flat&logo=serverless&logoColor=white)  
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)  
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)  
 
-This template demonstrates how to develop and deploy a simple Node Express API service running on AWS Lambda using the traditional Serverless Framework.
+Este es un proyecto backend desarrollado con **Node.js** y **Serverless Framework**. La aplicación está desplegada en **AWS** y utiliza **MySQL** con procedimientos almacenados para mayor seguridad.
 
-## Usage
+## 🚀 Tecnologías Utilizadas
 
-### Deployment
+- **Node.js**: Entorno de ejecución para JavaScript.
+- **Serverless Framework**: Para gestionar y desplegar aplicaciones en AWS.
+- **MySQL**: Base de datos utilizada con procedimientos almacenados.
+- **AWS**: El servicio en la nube donde está desplegada la aplicación.
 
-Install dependencies with:
+## 📚 Documentación de la API
 
-```
-npm install
-```
+La documentación de la API está disponible en el siguiente enlace:
 
-and then deploy with:
+[API Documentation](https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/api-docs/)
 
-```
-serverless deploy
-```
+## ⚡ Comandos de Desarrollo
 
-You can start local emulation with:
+A continuación se detallan los comandos más importantes para el desarrollo y despliegue:
 
-```
-npm run dev
-```
+### 🧪 Ejecutar pruebas unitarias
 
-Unit tests with:
+Para ejecutar las pruebas unitarias, usa el siguiente comando:
 
-```
+```bash
 npm run test
-```
-
-### Invocation
-
-After successful deployment, you can call the created application via HTTP:
-
-```bash
-curl https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/
-```
-
-Documentation in OpenApi/Swagger, you can call the via HTTP:
-
-```bash
-curl https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/api-docs/
-```
-
-
-To learn more about the capabilities of `serverless-offline`, please refer to its [GitHub repository](https://github.com/dherault/serverless-offline).
