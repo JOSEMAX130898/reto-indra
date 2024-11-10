@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "08e4be8c-9615-4047-ad22-663dcf7395e3",
+		"name": "RETO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8907756"
+	},
+	"item": [
+		{
+			"name": "Mysql",
+			"item": [
+				{
+					"name": "login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"retoindra@gmail.com\",\r\n  \"password\": \"ret@indra\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/auth/login",
+							"protocol": "https",
+							"host": [
+								"c2ev2mbevc",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"retoindra@gmail.com\",\r\n  \"password\": \"ret@indra\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/auth/create",
+							"protocol": "https",
+							"host": [
+								"c2ev2mbevc",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"auth",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOjEsIm1lc3NhZ2UiOiIkMmEkMTAkU3BveDE5TmVxU2NGMUFXbFdHazBSdVo0UlY0bC85UWJ0TTJaVVZXOS9GNFFyb293WHIzVUsiLCJpYXQiOjE3MzEyMjc5ODEsImV4cCI6MTczMTI1Njc4MX0.lRJU--J1gDxtRn2NL-CdvxZgnXyTsVbMQqmar9VIYK0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/product",
+							"protocol": "https",
+							"host": [
+								"c2ev2mbevc",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product crud insert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOjEsIm1lc3NhZ2UiOiIkMmEkMTAkU3BveDE5TmVxU2NGMUFXbFdHazBSdVo0UlY0bC85UWJ0TTJaVVZXOS9GNFFyb293WHIzVUsiLCJpYXQiOjE3MzEyMjc5ODEsImV4cCI6MTczMTI1Njc4MX0.lRJU--J1gDxtRn2NL-CdvxZgnXyTsVbMQqmar9VIYK0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": null,//update or delete\r\n  \"name\": \"New Product 55\",\r\n  \"description\": \"Description of the new product 55\",\r\n  \"price\": 10.99,\r\n  \"stock\": 100,\r\n  \"action\": \"I\"// I=insert,U=update,D=delete\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/product",
+							"protocol": "https",
+							"host": [
+								"c2ev2mbevc",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product crud update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOjEsIm1lc3NhZ2UiOiIkMmEkMTAkU3BveDE5TmVxU2NGMUFXbFdHazBSdVo0UlY0bC85UWJ0TTJaVVZXOS9GNFFyb293WHIzVUsiLCJpYXQiOjE3MzEyMjc5ODEsImV4cCI6MTczMTI1Njc4MX0.lRJU--J1gDxtRn2NL-CdvxZgnXyTsVbMQqmar9VIYK0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 5,//update or delete\r\n  \"name\": \"New Product 66 update\",\r\n  \"description\": \"Description of the new product 66\",\r\n  \"price\": 10.99,\r\n  \"stock\": 100,\r\n  \"action\": \"U\"// I=insert,U=update,D=delete\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/product",
+							"protocol": "https",
+							"host": [
+								"c2ev2mbevc",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product crud delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOjEsIm1lc3NhZ2UiOiIkMmEkMTAkU3BveDE5TmVxU2NGMUFXbFdHazBSdVo0UlY0bC85UWJ0TTJaVVZXOS9GNFFyb293WHIzVUsiLCJpYXQiOjE3MzEyMjc5ODEsImV4cCI6MTczMTI1Njc4MX0.lRJU--J1gDxtRn2NL-CdvxZgnXyTsVbMQqmar9VIYK0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 5,//update or delete\r\n  \"name\": \"New Product 55\",\r\n  \"description\": \"Description of the new product 55\",\r\n  \"price\": 10.99,\r\n  \"stock\": 100,\r\n  \"action\": \"D\"// I=insert,U=update,D=delete\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/product",
+							"protocol": "https",
+							"host": [
+								"c2ev2mbevc",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "swapi",
+			"item": [
+				{
+					"name": "swapi planetas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/swapi/planetas/1",
+							"protocol": "https",
+							"host": [
+								"c2ev2mbevc",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"swapi",
+								"planetas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "swapi personas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://c2ev2mbevc.execute-api.us-east-1.amazonaws.com/swapi/personas/1",
+							"protocol": "https",
+							"host": [
+								"c2ev2mbevc",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"swapi",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
