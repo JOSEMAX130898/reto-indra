@@ -30,3 +30,12 @@ Para ejecutar las pruebas unitarias, usa el siguiente comando:
 
 ```bash
 npm run test
+```
+
+### 🧪 Ejecutar pruebas unitarias
+
+Para ejecutar las pruebas unitarias, usa el siguiente comando:
+
+```bash
+npm run test
+```
