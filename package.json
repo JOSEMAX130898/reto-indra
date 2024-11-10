@@ -1,0 +1,44 @@
+{
+  "name": "nodejs-api-retoindra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "set NODE_ENV=development && nodemon local.js",
+    "deploy-qa": "copy serverless.qa.yml serverless.yml && serverless deploy",
+    "deploy-prod": "copy serverless.prod.yml serverless.yml && serverless deploy",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "joi": "^17.7.0",
+    "joi-password-complexity": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.7",
+    "nanoid": "^4.0.0",
+    "newman": "^5.3.2",
+    "node-fetch": "^3.3.0",
+    "serverless-http": "^3.1.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "chai-http": "^4.4.0",
+    "jest": "^29.7.0",
+    "mocha": "^10.4.0",
+    "nodemon": "^2.0.20",
+    "supertest": "^7.0.0"
+  }
+}
