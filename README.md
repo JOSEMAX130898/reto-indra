@@ -24,12 +24,23 @@ La documentación de la API está disponible en el siguiente enlace:
 
 A continuación se detallan los comandos más importantes para el desarrollo y despliegue:
 
-### 🧪 Ejecutar pruebas unitarias
+### 🌍 Ejecutar en Local
 
-Para ejecutar las pruebas unitarias, usa el siguiente comando:
+Para iniciar el servidor de desarrollo en tu entorno local y probar la aplicación, ejecuta el siguiente comando:
 
 ```bash
-npm run test
+npm run dev
+```
+
+### 🚀 Desplegar Serverless
+
+Para desplegar la aplicación en los entornos de QA o Producción, usa los siguientes comandos:
+
+```bash
+npm run deploy-qa
+```
+```bash
+npm run deploy-prod
 ```
 
 ### 🧪 Ejecutar pruebas unitarias
