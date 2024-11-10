@@ -13,8 +13,9 @@ Este es un proyecto backend desarrollado con **Node.js** y **Serverless Framewor
 - **Serverless Framework**: Para gestionar y desplegar aplicaciones en AWS.
 - **MySQL**: Base de datos utilizada con procedimientos almacenados.
 - **AWS**: El servicio en la nube donde está desplegada la aplicación.
+- **Swagger**: Herramienta utilizada para documentar y probar la API de la aplicación, proporcionando una interfaz interactiva para explorar sus endpoints.
 
-## 📚 Documentación de la API Swagger
+## 📚 Documentación de la API
 
 La documentación de la API está disponible en el siguiente enlace:
 
